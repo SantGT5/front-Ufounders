@@ -53,7 +53,7 @@
 
 .navBar {
   font-size: 1.3em;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .head {
@@ -61,11 +61,14 @@
   align-items: center;
   margin-top: 1em;
   margin-bottom: 3.5em;
+  margin-left: 9em;
 }
 
 .logoIMG {
-  width: 3em;
-  margin: 2em;
+  width: 2.5em;
+  margin-left: 1.7em;
+  position: fixed;
+  top: 7.5em;
 }
 
 .title {
