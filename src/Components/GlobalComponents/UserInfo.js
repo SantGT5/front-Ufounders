@@ -19,7 +19,7 @@ export default function ResponsiveDialog(props) {
   return (
     <div>
       <Button onClick={handleClickOpen}>
-        <MoreHorizIcon style={{ color: "black" }} />
+        <MoreHorizIcon style={{ color: "black", fontSize:"2.5em" }} />
       </Button>
 
       <Dialog

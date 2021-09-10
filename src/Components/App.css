@@ -49,20 +49,129 @@
   box-shadow: 0px 5px 15px rgb(99, 96, 96);
 }
 
+/* Head */
 
-.verticalHR{
-  border-right: 2.5px solid rgb(232, 232, 232);
-  width: 12em;
+.navBar {
+  font-size: 1.3em;
+  padding: 1em;
 }
 
-.horizontalHR{
-  border-right: 2.5px solid rgb(232, 232, 232);
+.head {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 3.5em;
 }
 
-.rotate{
+.logoIMG {
+  width: 3em;
+  margin: 2em;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 29px;
+}
+
+.subTitle {
+  color: #808080;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+}
+
+/* Menu */
+
+.linkMenu {
+  text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  top: 20em;
+  margin: 1px;
+}
+
+.rotate {
   transform: rotate(180deg);
 }
 
-.iconMenu{
+.iconMenu {
   transform: rotate(180deg);
+}
+
+/* Ticket List */
+
+.list {
+  width: 85vw;
+  margin-left: 10em;
+  margin-right: 1em;
+}
+
+.userName {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.presentList {
+  color: #808080;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0em;
+}
+
+.id {
+  display: flex;
+  align-items: center;
+}
+
+.idList {
+  margin-left: 1.9em;
+  font-weight: 500;
+}
+
+.subInfoID {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #808080;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0em;
+}
+
+.ticket {
+  display: flex;
+  align-items: center;
+}
+
+.ticketList {
+  margin-left: 1.9em;
+  font-weight: 500;
+}
+
+.subInfoTicket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #808080;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0em;
+}
+
+.ticketBox {
+  min-width: 14em;
+  max-width: 14em;
+}
+
+.verticalHR {
+  border-right: 2.5px solid rgb(232, 232, 232);
+  min-width: 14em;
+  max-width: 14em;
+}
+
+.horizontalHR {
+  border-right: solid rgb(232, 232, 232);
+  font-size: 20px;
 }

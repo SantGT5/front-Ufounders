@@ -1,7 +1,7 @@
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Menu() {
   const [value, setValue] = useState(0);
@@ -11,8 +11,9 @@ function Menu() {
   };
 
   return (
-    <div style={{ position: "fixed", top: "20em", margin: "1px" }}>
-      <Link to="/" style={{ textDecoration: "none" }}>
+    <div >
+    <div className="menu">
+      <Link to="/" className="linkMenu">
         <Tabs
           TabIndicatorProps={{
             style: {
@@ -45,7 +46,7 @@ function Menu() {
         </Tabs>
       </Link>
 
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/graduation" className="linkMenu">
         <Tabs
           TabIndicatorProps={{
             style: {
@@ -77,7 +78,7 @@ function Menu() {
           ></Tab>
         </Tabs>
       </Link>
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/documents" className="linkMenu">
         <Tabs
           TabIndicatorProps={{
             style: {
@@ -109,7 +110,7 @@ function Menu() {
           ></Tab>
         </Tabs>
       </Link>
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/statistic" className="linkMenu">
         <Tabs
           TabIndicatorProps={{
             style: {
@@ -142,7 +143,7 @@ function Menu() {
         </Tabs>
       </Link>
 
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/finance" className="linkMenu">
         <Tabs
           TabIndicatorProps={{
             style: {
@@ -175,7 +176,7 @@ function Menu() {
         </Tabs>
       </Link>
 
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <Link to="/help" className="linkMenu">
         <Tabs
           TabIndicatorProps={{
             style: {
@@ -207,6 +208,7 @@ function Menu() {
           ></Tab>
         </Tabs>
       </Link>
+    </div>
     </div>
   );
 }
