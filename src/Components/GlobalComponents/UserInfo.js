@@ -1,7 +1,6 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 
@@ -29,7 +28,6 @@ export default function ResponsiveDialog(props) {
             maxWidth: "100%",
             minWidth:"40em",
             width: "45em",
-            height: "25em",
             display: "flex",
             justifyContent: "center",
             
@@ -69,33 +67,33 @@ export default function ResponsiveDialog(props) {
 
         <div className="grid-container">
           <div>
-            <span>ID</span>
+            <span className="titleInfo">ID</span>
             <p className="moreInfoSubTitle">{props._id}</p>
           </div>
           <div>
-            <span>N° de ticket</span>
+            <span className="titleInfo">N° de ticket</span>
             <p className="moreInfoSubTitle">{props._id}</p>
           </div>
         </div>
 
         <div className="grid-container">
           <div>
-            <span>Fecha de nacimiento</span>
+            <span className="titleInfo">Fecha de nacimiento</span>
             <p className="moreInfoSubTitle">{props.birthdate}</p>
           </div>
           <div>
-            <span>Email</span>
+            <span className="titleInfo">Email</span>
             <p className="moreInfoSubTitle">{props.email}</p>
           </div>
           <div>
-            <span>Teléfono</span>
+            <span className="titleInfo">Teléfono</span>
             <p className="moreInfoSubTitle">{props.phone}</p>
           </div>
         </div>
 
         <div>
           <div style={{ padding: "1.5em" }}>
-            <span>Dirección</span>
+            <span className="titleInfo">Dirección</span>
             <p className="moreInfoSubTitle">{props.address}</p>
           </div>
         </div>

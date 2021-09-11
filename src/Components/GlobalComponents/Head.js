@@ -1,5 +1,3 @@
-import img from "../../imgs/Sem Título.png";
-
 function Head() {
   const currentUser = "Rodrígo";
 

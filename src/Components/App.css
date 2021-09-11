@@ -1,53 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.loginBorder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 22em;
-  height: 15em;
-  border: solid rgb(102, 128, 193);
-  border-radius: 20px;
-  box-shadow: 0px 5px 15px rgb(99, 96, 96);
-}
 
 /* Head */
 
@@ -175,8 +126,9 @@
 }
 
 .horizontalHR {
-  border-right: solid rgb(232, 232, 232);
-  font-size: 20px;
+  border-top: 1px solid rgb(0, 0, 0);
+  margin: 1.5em;
+  padding: 0;
 }
 
 /* More Info */
@@ -184,13 +136,15 @@
 .headInfo {
   display: flex;
   justify-content: space-between;
-  padding: 1.3em;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 13em auto auto;
   padding: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .moreInfoSubTitle {
@@ -209,4 +163,10 @@
   color: #000000;
   position: fixed;
   background-color: transparent;
+}
+
+.titleInfo{
+
+font-weight: 500;
+
 }
