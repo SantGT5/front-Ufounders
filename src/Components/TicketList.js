@@ -40,7 +40,6 @@ import UserInfo from "./GlobalComponents/UserInfo";
 const TicketList = () => {
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.list);
-  console.log(posts);
 
   useEffect(() => {
     dispatch(loadPosts());

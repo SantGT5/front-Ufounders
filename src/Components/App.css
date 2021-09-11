@@ -178,3 +178,35 @@
   border-right: solid rgb(232, 232, 232);
   font-size: 20px;
 }
+
+/* More Info */
+
+.headInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 13em auto auto;
+  padding: 1.5em;
+}
+
+.moreInfoSubTitle {
+  color: #808080;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0em;
+}
+
+.userNameInfo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.closeBTN {
+  color: #000000;
+  position: fixed;
+  background-color: transparent;
+}

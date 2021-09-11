@@ -4,11 +4,16 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import img from "../../imgs/Sem Título.png";
 
+import { useLocation } from "react-router-dom"
+
 function Menu() {
+  const location = useLocation()
   const [value, setValue] = useState(0);
 
+console.log("location -> ", location.pathname)
+
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+        setValue(newValue)
   };
 
   return (
@@ -24,6 +29,7 @@ function Menu() {
                 borderRadius: "15px 0px 0px 20px",
               },
             }}
+            
             orientation="vertical"
             className="rotate"
             value={value}
@@ -31,6 +37,7 @@ function Menu() {
             aria-label="disabled tabs example"
           >
             <Tab
+            disableRipple={true}
               value={0}
               icon={
                 <i
@@ -64,6 +71,7 @@ function Menu() {
             aria-label="disabled tabs example"
           >
             <Tab
+            disableRipple={true}
               value={1}
               icon={
                 <i
@@ -96,6 +104,7 @@ function Menu() {
             aria-label="disabled tabs example"
           >
             <Tab
+            disableRipple={true}
               value={2}
               icon={
                 <i
@@ -128,6 +137,7 @@ function Menu() {
             aria-label="disabled tabs example"
           >
             <Tab
+            disableRipple={true}
               value={3}
               icon={
                 <i
@@ -161,6 +171,7 @@ function Menu() {
             aria-label="disabled tabs example"
           >
             <Tab
+            disableRipple={true}
               value={4}
               icon={
                 <i
@@ -194,6 +205,7 @@ function Menu() {
             aria-label="disabled tabs example"
           >
             <Tab
+            disableRipple={true}
               value={5}
               icon={
                 <i
