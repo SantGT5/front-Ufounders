@@ -17,21 +17,19 @@ const api =
         try {
             const response = await axios.request({
                 baseURL: "http://localhost:4000/tickets",
-                production: "https://memoriam-app.herokuapp.com",
                 url,
                 method,
                 data,
             });
 
-            // General
             dispatch(actions.apiCallSucess(response.data));
-            // Specific
+
             if (onSuccess)
                 dispatch({ type: onSuccess, payload: response.data });
         } catch (error) {
-            // General
+
             dispatch(actions.apiCallFailed(error.message));
-            // Specific
+
             if (onError) dispatch({ type: onError, payload: error.message });
         }
     };
