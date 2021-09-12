@@ -16,11 +16,11 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/login" component={Login} />
+        <Route exact path="/" component={Login} />
         <Provider store={store}>
           <Route path="/" component={Head} />
           <Route path="/" component={Menu} />
-          <Route exact path="/" component={TicketList} />
+          <Route path="/home" component={TicketList} />
         </Provider>
       </Switch>
     </BrowserRouter>

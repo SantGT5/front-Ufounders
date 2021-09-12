@@ -1,3 +1,49 @@
+/* Login */
+
+.login {
+  display: grid;
+  justify-content: center;
+  margin-top: 10em;
+}
+
+.logoLogin {
+  position: fixed;
+  top: 1em;
+  left: 2em;
+}
+
+.loginBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 15px;
+  max-width: 90vw;
+  min-width: 25em;
+  width: 30em;
+  height: 24em;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: center;
+}
+
+.titleLogin {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.checkboxPass {
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+}
+
 
 
 /* Head */
@@ -42,7 +88,7 @@
 
 .menu {
   position: fixed;
-  top: 20em;
+  top: 18em;
   margin: 1px;
 }
 
@@ -127,7 +173,8 @@
 
 .horizontalHR {
   border-top: 1px solid rgb(0, 0, 0);
-  margin: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   padding: 0;
 }
 
@@ -165,8 +212,6 @@
   background-color: transparent;
 }
 
-.titleInfo{
-
-font-weight: 500;
-
+.titleInfo {
+  font-weight: 500;
 }

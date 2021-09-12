@@ -17,7 +17,11 @@ export default function ResponsiveDialog(props) {
 
   return (
     <div>
-      <Button disableRipple style={{ backgroundColor: 'transparent' }} onClick={handleClickOpen}>
+      <Button
+        disableRipple
+        style={{ backgroundColor: "transparent" }}
+        onClick={handleClickOpen}
+      >
         <MoreHorizIcon style={{ color: "black", fontSize: "2.5em" }} />
       </Button>
 
@@ -26,11 +30,10 @@ export default function ResponsiveDialog(props) {
           style: {
             borderRadius: "15px",
             maxWidth: "100%",
-            minWidth:"40em",
+            minWidth: "40em",
             width: "45em",
             display: "flex",
             justifyContent: "center",
-            
           },
         }}
         open={open}
@@ -58,8 +61,14 @@ export default function ResponsiveDialog(props) {
             </div>
           </div>
           <div>
-            <Button disableRipple style={{ backgroundColor: 'transparent' }} onClick={handleClose}>
-              <HighlightOffIcon style={{ fontSize: "2.2em", backgroundColor: 'transparent' }} className="closeBTN"
+            <Button
+              disableRipple
+              style={{ backgroundColor: "transparent" }}
+              onClick={handleClose}
+            >
+              <HighlightOffIcon
+                style={{ fontSize: "2.2em", backgroundColor: "transparent" }}
+                className="closeBTN"
               />
             </Button>
           </div>

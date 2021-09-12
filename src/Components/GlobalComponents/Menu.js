@@ -20,7 +20,7 @@ console.log("location -> ", location.pathname)
     <div>
       <img className="logoIMG" src={img} alt="logo" />
       <div className="menu">
-        <Link to="/" className="linkMenu">
+        <Link to="/home" className="linkMenu">
           <Tabs
             TabIndicatorProps={{
               style: {
@@ -44,7 +44,7 @@ console.log("location -> ", location.pathname)
                   style={{
                     fontSize: "1.7em",
                     color: value === 0 ? "#101B29" : "#989898",
-                    padding: "0.4em",
+                    padding: "0.8em",
                     justifyContent: "center",
                     display: "flex",
                   }}
@@ -78,7 +78,7 @@ console.log("location -> ", location.pathname)
                   style={{
                     fontSize: "1.7em",
                     color: value === 1 ? "#101B29" : "#989898",
-                    padding: "0.4em",
+                    padding: "0.8em",
                     justifyContent: "center",
                     display: "flex",
                   }}
@@ -111,7 +111,7 @@ console.log("location -> ", location.pathname)
                   style={{
                     fontSize: "1.7em",
                     color: value === 2 ? "#101B29" : "#989898",
-                    padding: "0.4em",
+                    padding: "0.8em",
                     justifyContent: "center",
                     display: "flex",
                   }}
@@ -144,7 +144,7 @@ console.log("location -> ", location.pathname)
                   style={{
                     fontSize: "1.7em",
                     color: value === 3 ? "#101B29" : "#989898",
-                    padding: "0.4em",
+                    padding: "0.8em",
                     justifyContent: "center",
                     display: "flex",
                   }}
@@ -178,7 +178,7 @@ console.log("location -> ", location.pathname)
                   style={{
                     fontSize: "1.7em",
                     color: value === 4 ? "#101B29" : "#989898",
-                    padding: "0.4em",
+                    padding: "0.8em",
                     justifyContent: "center",
                     display: "flex",
                   }}
@@ -212,7 +212,7 @@ console.log("location -> ", location.pathname)
                   style={{
                     fontSize: "1.7em",
                     color: value === 5 ? "#101B29" : "#989898",
-                    padding: "0.4em",
+                    padding: "0.8em",
                     justifyContent: "center",
                     display: "flex",
                   }}
