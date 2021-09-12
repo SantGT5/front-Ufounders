@@ -1,37 +1,3 @@
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-
-// function TicketList() {
-//   const [ticket, setTicket] = useState([]);
-//   console.log("ticket -> ", ticket);
-//   useEffect(() => {
-//     async function fetchTicket() {
-//       try {
-//         const response = await axios.get("http://localhost:4000/tickets");
-//         console.log(response.data);
-//         setTicket([...response.data]);
-//       } catch (err) {
-//         console.log(err.response);
-//       }
-//     }
-//     fetchTicket();
-//   }, []);
-
-//   return (
-//       <div>
-//     <h1>Posts</h1>
-//     <ul>
-//       { ticket.map(( post, i ) =>{
-//         return <li key={ i }>{post.firstName}</li>
-//       }) }
-//     </ul>
-//     </div>
-//   )
-
-// }
-
-// export default TicketList;
-
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { loadPosts } from "../store/posts";
@@ -116,6 +82,7 @@ const TicketList = () => {
                     present={post.present}
                     lastName={post.lastName}
                     _id="12345678901234"
+                    // ticket={post.ticket}
                     birthdate={date}
                     email={post.email}
                     phone={post.phone}
