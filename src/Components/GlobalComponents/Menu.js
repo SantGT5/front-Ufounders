@@ -4,18 +4,13 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import img from "../../imgs/Sem Título.png";
 
-import { useLocation } from "react-router-dom"
-
 function Menu() {
-  const location = useLocation()
   const [value, setValue] = useState(0);
-
-console.log("location -> ", location.pathname)
 
   const handleChange = (event, newValue) => {
         setValue(newValue)
   };
-
+  
   return (
     <div>
       <img className="logoIMG" src={img} alt="logo" />
